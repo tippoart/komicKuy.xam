@@ -1,0 +1,205 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Josefin Sans', sans-serif;
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: rgb(57, 48, 56);
+    overflow-x: hidden;
+   
+}
+
+nav {
+    display: flex;
+    background-color: rgb(108, 87, 108);
+    padding: 30px;
+    justify-content: space-between;
+    color: white;
+    position: fixed;
+    top: 0;
+    width: 98%;
+    z-index: 1;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.534);
+    
+}
+
+nav ul {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    list-style: none;
+    font-size: 20px;
+    position: relative;
+    right: 4%;
+
+
+}
+nav ul li{
+
+    padding: 8px;
+    border-radius: 5px;
+    transition: transform 1s, 1s;
+}
+nav ul li:hover{
+    transform:rotate(2.3deg);
+    background-color: #908190;
+   
+}
+nav ul li a {
+    text-decoration: none;
+    color: white;
+}
+
+#menu {
+    color: rgb(255, 255, 255);
+    font-size: 30px;
+    display: none;
+}
+
+section {
+    background-image: linear-gradient(rgba(18, 18, 18, 0.105), rgba(18, 18, 18, 0.708)), url(img/totte-annerbrink-AYh0edy-4nc-unsplash.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    z-index: 0;
+    box-shadow: 2px 5px 10px rgba(0, 0, 0, 0.374);
+
+}
+
+section .p1 {
+    font-size: 55px;
+}
+
+section p {
+    position: relative;
+    top: 35%;
+    left: 2%;
+    text-align: center;
+    font-size: 25px;
+}
+
+canvas {
+    position: relative;
+    bottom: 80px;
+    height: 100%;
+    z-index: 0;
+}
+
+.card {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    padding: 25px;
+    position: relative;
+
+
+}
+
+.card .konten {
+    background-color: rgba(114, 129, 144, 0.767);
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    gap: 15px;
+    box-shadow: 5px 10px 20px rgba(4, 4, 4, 0.283);
+}
+
+.card h1 {
+    color: white;
+    text-align: center;
+    margin-top: 50px;
+}
+.card .konten button{
+    border: none;
+    background-color: #6e656e;
+    padding: 15px;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+    box-shadow: 1px 5px 8px rgba(0, 0, 0, 0.29);
+    transition: transform 0.5s, 0.5s;
+}
+.card .konten button:hover{
+    transform:scaleX(1.1);
+    background-color: #908190;
+}
+
+.card .konten img {
+    object-fit: cover;
+    width: 240px;
+    border-radius: 10px;
+}
+
+.card .konten p {
+    color: white;
+}
+
+.card .konten h2 {
+    color: white;
+}
+
+
+.card .konten table {
+    color: white;
+    border: 1px solid rgb(135, 134, 134);
+
+
+}
+
+.card .konten table,
+th,
+td {
+    border-collapse: collapse;
+
+
+}
+
+.card .konten th,
+td {
+
+    border-bottom: 1px solid #aba8a8;
+    text-align: left;
+    padding: 18px;
+    background-color: rgb(95, 84, 99);
+
+
+}
+
+footer{
+    background-color: rgba(139, 132, 140, 0.715);
+    color: rgb(199, 195, 195);
+    padding: 30px;
+    text-align: center;
+    margin-top: 60px;
+}
+
+@media only screen and (max-width: 767px) {
+
+    nav ul {
+        flex-direction: column;
+        margin-top: 70px;
+        width: 100%;
+    }
+
+    #menu {
+        display: block;
+    }
+
+
+    nav .hidden {
+        display: none;
+
+    }
+
+.card{
+    grid-template-columns: repeat(1, 1fr);
+}
+}

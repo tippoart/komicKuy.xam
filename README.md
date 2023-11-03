@@ -1,0 +1,1 @@
+# komikKuy.xam
